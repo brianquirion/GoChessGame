@@ -26,3 +26,7 @@ func GetBoard(c *fiber.Ctx) error {
 		"board": newBoard,
 	})
 }
+
+func PostBoardMove(c *fiber.Ctx) error {
+	return c.JSON("")
+}

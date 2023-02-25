@@ -21,4 +21,4 @@
 go.work
 
 # IDE-specific
-.idea
+../.idea

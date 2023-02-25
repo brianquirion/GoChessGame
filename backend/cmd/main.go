@@ -29,7 +29,8 @@ func main() {
 
 	v1 := app.Group("/api/v1")
 	v1.Get("/ping", driving.Ping)
-	v1.Get("/board/1", driving.GetBoard)
+	v1.Get("/board/:id", driving.GetBoard)
+	v1.Post("/board/:id/move", driving.PostBoardMove)
 
 	app.Static("/", "./static/public")
 
